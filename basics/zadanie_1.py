@@ -1,0 +1,11 @@
+print("Pole trójkąta \no podstawie 10 i wysokości 5:")
+print(10 * 5 / 2)  # a * h / 2
+print()
+print("Pole koła o promieniu 7:")
+print(3.14 * 7 ** 2)
+print()
+print("Pole trapezu a=3, b=9, h=6.5")
+print(1 / 2 * (3 + 9) * 6.5)
+print()
+print("Objętość kuli o r=7/8")
+print(4 / 3 * 3.14 * (7 / 8) ** 3)
