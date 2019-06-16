@@ -25,14 +25,11 @@
 # #     if n == 2:
 # #         break
 # # else:
-# #     print("Zakończyłem")
+#
 
-if a or b
+import random
 
-x = None
+print(random.randint(0, 100))
 
-if x == None:
-
-if x is None:
-
-x is False
+print( 7 - 1)
+print( abs(1 - 7))
