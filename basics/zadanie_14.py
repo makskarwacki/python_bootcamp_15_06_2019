@@ -15,6 +15,6 @@ if min_l == None:
     print("Nie wprowadziłeś liczb")
 else:
     print(f"""
-Minimum to : {min_l} 
-Maksimum to : {max_l} 
+Znalezione minimum to : {min_l} 
+Znalezione maksimum to : {max_l} 
 """)
