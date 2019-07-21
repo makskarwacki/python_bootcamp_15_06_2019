@@ -69,3 +69,39 @@ a = Dog("Rex", "Pudel")
 print(dir(a))
 a.sound
 print(a.name)
+
+
+class Dlugosc():
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return Dlugosc(self.value + other.value)
+
+    def __eq__(self, other):
+        return self.value == other.value
+
+d = Dlugosc(10)
+print(isinstance(d, Dlugosc))
+
+
+class Foo:
+
+    def __init__(self):
+        self.x = 10
+
+    def bar(self):
+        print("Coś tam")
+
+    @classmethod
+    def baz(cls):
+        print(cls)
+        print(cls.x)
+
+    @staticmethod
+    def fight(a, b):
+        for i in range(10):
+            a.get_damage()
+
+f = Foo()
+f.baz()
