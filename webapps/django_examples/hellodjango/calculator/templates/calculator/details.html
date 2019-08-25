@@ -1,0 +1,7 @@
+{% extends "calculator\base.html" %}
+
+{% block content %}
+{{operation}}
+
+<a href="{% url 'calculations' %}">back</a>
+{% endblock %}

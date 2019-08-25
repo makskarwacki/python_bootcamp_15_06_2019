@@ -1,0 +1,33 @@
+{% extends "calculator\base.html" %}
+
+{% block content %}
+{% if result %}
+    <h1>Wynik operacji to: {{result}}</h1>
+{% endif %}
+{% if operations %}
+    <table>
+        <thead>
+        <th>id</th>
+        <th>x</th>
+        <th>y</th>
+        <th>operation type</th>
+        <th>date</th>
+        </thead>
+        <tbody>
+        {% for op in operations %}
+        <tr>
+            <td><a href="{{op.id}}">{{op.id}}</a></td>
+            <td>{{op.x}}</td>
+            <td>{{op.y}}</td>
+            <td>{{op.operation}}</td>
+            <td>{{op.created}}</td>
+        </tr>
+
+        {% endfor %}
+
+
+        </tbody>
+    </table>
+{% endif %}
+
+{% endblock %}
